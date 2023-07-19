@@ -1,3 +1,32 @@
-h1 {
-    color: red;
+.profile-picture {
+    width: 70px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    position: relative;
+    right: -30px;
+    top: 20px;
+}
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#wrapper .text {
+    position: relative;
+    bottom: 30px;
+    left: 0px;
+    visibility: hidden;
+}
+
+#wrapper:hover .text {
+    visibility: visible;
+}
+.text {
+    transform: translate3d(120px, -10px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+        rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+.container {
+    position: relative;
+    right: -400px;
 }
