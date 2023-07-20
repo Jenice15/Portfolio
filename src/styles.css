@@ -1,6 +1,20 @@
+:root {
+    --primary-color: #e9e9e9;
+    --secondary-color: #94e5f0;
+    --font-family: font-family: 'Gentium Plus', serif;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: var(--font-family);
+    font-weight: 300;
+    width: auto;
+    height: auto;
+}
+
 .profile-picture {
     width: 70px;
-    border: 1px solid gray;
+    border: 2px solid var(--secondary-color);
     border-radius: 50%;
     position: relative;
     right: -30px;
@@ -22,11 +36,78 @@
     visibility: visible;
 }
 .text {
+    color: #b3ebf2;
     transform: translate3d(120px, -10px, 0px) scale3d(1, 1, 1) rotateX(0deg)
         rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
 }
-.container {
-    position: relative;
-    right: -400px;
+
+
+.link-padding {
+    margin-left: 30px !important;
+    margin-right: 30px !important;
 }
+.nav-bar-position-right {
+    position: relative;
+    right: -800px;
+}
+.contain {
+    position: relative;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 305px;
+    padding-right: 20px;
+    padding-left: 60px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+}
+.typer {
+    width: 50%;
+    color: #aaa9a3;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+}
+.myself {
+    color: #32322e;
+    font-family: var(--font-family);
+}
+.cta.inline {
+    margin-top: 25px;
+    margin-left: 0;
+}
+.cta {
+    margin-left: 10px;
+    padding-top: 12px;
+    padding-bottom: 11px;
+    border-radius: 3px;
+    background-color: #b3ebf2;
+    opacity: .8;
+    -webkit-transition: background-color .4s,padding .2s;
+    transition: background-color .4s,padding .2s;
+    font-family: Inter,sans-serif;
+    color: #32322e;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.w-button {
+    display: inline-block;
+    padding: 12px 18px;
+    background-color:var(--secondary-color);
+    color:#88846b;
+    border: 0;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 8px;
+    display: inline;
+    margin-top: 50px!important;
+}
+.w-button :hover{
+    padding: 18px 20px;
+    font-size: 20px;
+} 
+
