@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #e9e9e9;
+    --primary-color: #f2e8e8;
     --secondary-color: #94e5f0;
     --font-family: font-family: 'Gentium Plus', serif;
 }
@@ -8,8 +8,14 @@ body {
     background-color: var(--primary-color);
     font-family: var(--font-family);
     font-weight: 300;
-    width: auto;
+    width: auto !important;
     height: auto;
+    margin: 0 auto;
+    
+}
+.container{
+    margin: 0 auto;
+    max-width: 100%;
 }
 
 .profile-picture {
@@ -19,6 +25,9 @@ body {
     position: relative;
     right: -30px;
     top: 20px;
+}
+.profile-picture :hover{
+    cursor: alias;
 }
 .center-block {
     display: block;
@@ -30,10 +39,13 @@ body {
     bottom: 30px;
     left: 0px;
     visibility: hidden;
+   
 }
 
 #wrapper:hover .text {
     visibility: visible;
+  
+    
 }
 .text {
     color: var(--secondary-color);
@@ -48,12 +60,11 @@ body {
     margin-left: 30px !important;
     margin-right: 30px !important;
 }
-.nav-bar-position-right {
+.nav-position {
     position: relative;
     right: -800px;
 }
 .contain {
-    position: relative;
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -63,22 +74,24 @@ body {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
 }
-.typer {
+.intro {
     width: 50%;
     color: #aaa9a3;
-    font-size: 40px;
+    font-size: 42px;
     line-height: 48px;
     letter-spacing: -0.5px;
 }
 .myself {
     color: #32322e;
     font-family: var(--font-family);
+    font-size: 40px;
 }
-.abt-button {
-    display: block;
-    padding: 12px 18px;
+
+.button {
+    display: inline-block !important;
+    padding: 8px 10px;
     background-color:var(--secondary-color);
-    color:#88846b;
+    color: aliceblue !important;;
     border: 0;
     line-height: inherit;
     text-decoration: none;
@@ -86,9 +99,59 @@ body {
     border-radius: 8px;
     display: inline;
     margin-top: 20px !important;
+    font-size: 22px;
+    text-decoration: none !important;
+    
+
 }
-.abt-button :hover{
-    padding: 18px 20px;
-    font-size: 20px;
-} 
+
+.button:hover {
+    display: inline-block!important;
+    /* transform: scale(1.3);  */
+    padding-right: 50px;
+    text-decoration: none !important;
+    font-size: 25px ;
+}
+
+.button:active {
+  background-color: #007095;
+  box-shadow: 0 5px rgb(25, 25, 25);
+  text-decoration: none !important;
+  
+
+}
+.website-imgs{
+    display: block;
+    max-width: 200px !important;
+    max-height: 100px!important;
+}
+.connect{
+    margin-top: 15px;
+    margin-right: -1100px;
+    font-family: var(--font-family);
+    color: #aaa9a3;
+    
+}
+.linkedin-icon{
+    border: 1px solid var(--secondary-color);
+    padding: 10px;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+}
+@media ( max-width:576px){
+    body{
+        max-width: auto;
+        max-height: auto;
+    }
+    h1{
+        font-size: 48px;
+
+    }
+   
+}
+@media (min-width: 577px){
+    body{
+        height: 0;
+    }
+}
 
