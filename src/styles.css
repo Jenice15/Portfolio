@@ -89,7 +89,7 @@ body {
 
 .button {
     display: inline-block !important;
-    padding: 8px 10px;
+    padding: 8px 10fposipx;
     background-color:var(--secondary-color);
     color: aliceblue !important;;
     border: 0;
@@ -127,9 +127,9 @@ body {
 }
 .connect{
     margin-top: 15px;
-    margin-right: -1100px;
     font-family: var(--font-family);
     color: #aaa9a3;
+
     
 }
 .linkedin-icon{
@@ -151,7 +151,7 @@ body {
 }
 @media (min-width: 577px){
     body{
-        height: 0;
+    
     }
 }
 
