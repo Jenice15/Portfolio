@@ -13,6 +13,9 @@ body {
     margin: 0 auto;
     
 }
+.bg-body-tertiary {
+ --bs-bg-opacity: 0!important;
+}
 .container{
     margin: 0 auto;
     max-width: 100%;
@@ -34,7 +37,7 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-#wrapper .text {
+#wrapper .my-name {
     position: relative;
     bottom: 30px;
     left: 0px;
@@ -42,17 +45,21 @@ body {
    
 }
 
-#wrapper:hover .text {
+#wrapper:hover .my-name {
     visibility: visible;
   
     
 }
-.text {
+.my-name {
     color: var(--secondary-color);
     opacity: none;
     transform: translate3d(120px, -10px, 0px) scale3d(1, 1, 1) rotateX(0deg)
         rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
+
+}
+.navbar-position{
+    justify-content: right !important;
 }
 
 
@@ -60,10 +67,8 @@ body {
     margin-left: 30px !important;
     margin-right: 30px !important;
 }
-.nav-position {
-    position: relative;
-    right: -800px;
-}
+
+   
 .contain {
     display: block;
     margin-right: auto;
@@ -74,6 +79,13 @@ body {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
 }
+#navbarNav{
+    color: black;
+}
+.main-page-intro{
+    margin-top: 300px!important;
+    margin-left: 30px;
+}
 .intro {
     width: 50%;
     color: #aaa9a3;
@@ -81,7 +93,7 @@ body {
     line-height: 48px;
     letter-spacing: -0.5px;
 }
-.myself {
+.my-self {
     color: #32322e;
     font-family: var(--font-family);
     font-size: 40px;
@@ -89,7 +101,7 @@ body {
 
 .button {
     display: inline-block !important;
-    padding: 8px 10fposipx;
+    padding: 8px 10px;
     background-color:var(--secondary-color);
     color: aliceblue !important;;
     border: 0;
@@ -129,6 +141,10 @@ body {
     margin-top: 15px;
     font-family: var(--font-family);
     color: #aaa9a3;
+    text-align: right;
+    position: relative;
+    margin-right: 0px;
+    margin-bottom: 20px;
 
     
 }
@@ -142,16 +158,41 @@ body {
     body{
         max-width: auto;
         max-height: auto;
-    }
-    h1{
-        font-size: 48px;
+       }
+   
+    .nav-bar-position{
+        margin-left: 450px!important;
+        margin-top: -100px;
+        text-align: center!important;
 
     }
-   
-}
-@media (min-width: 577px){
-    body{
-    
+    .navbar-toggler{
+        margin: 0 auto;
+        margin-left: auto;
+        float: right;
+        padding: 10px;
+        margin: 20px;
+
+    }   
+      
+    .my-self{
+        font-size: 40px;
+        
     }
+
+    .text{
+        font-size: 30px;
+        margin-top: 90px;
+    }
+    .abt-button{
+        padding: 15px 15px;
+    }
+    .connect{
+        margin-right: -250px;
+        margin-top: 50px;
+    }
+}
+
+   
 }
 
