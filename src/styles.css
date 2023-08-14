@@ -458,7 +458,7 @@ p{
 
 }
 @media(min-width:577px){
-    .without-mq{
+    .with-mq{
         display: none;
     }
 }
