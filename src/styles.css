@@ -1,6 +1,6 @@
 :root {
     --primary-color: #f2e8e8;
-    --secondary-color: #94e5f0;
+    --secondary-color: #f094d3;
     --primary-font-family: font-family: 'Gentium Plus', serif;
     --secondary-font-family: 'Playfair Display', serif;
 }
@@ -12,6 +12,7 @@ body {
     width: auto !important;
     height: auto;
     margin: 0 auto;
+    overflow: scroll;
     
 }
 .bg-body-tertiary {
@@ -84,7 +85,7 @@ body {
     color: black;
 }
 .main-page-intro{
-    margin-top: 300px!important;
+    margin-top: 260px!important;
     margin-left: 30px;
 }
 .intro {
@@ -185,7 +186,7 @@ body {
     max-height: 100px!important;
 }
 .connect{
-    margin-top: 25px;
+    margin-top: 15px;
     font-family: var(--font-family);
     color: #aaa9a3;
     text-align: right;
@@ -193,6 +194,7 @@ body {
     margin-right: 0px;
     margin-bottom: 20px;
 }
+
 .linkedin-icon{
     border: 1px solid var(--secondary-color);
     padding: 10px;
@@ -301,47 +303,37 @@ body {
     transform: scale();
 }
 
-.photo img{
-  object-fit: cover;
-  filter: grayscale(100%) contrast(120%); */
-  box-shadow: 10px 15px 25px 0 rgba(0,0,0,.2);
+.photo{
+  transform: translate(-50%, -50%);
   display: block;
-  transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
-
+  position: relative;
+  top: 280px;
+  right: -380px;
 }
 
+.photo img{
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  /* filter: grayscale(0%) contrast(120%); */
+  box-shadow: 10px 15px 25px 0 rgba(0,0,0,.3);
+  display: block;
+  transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  /* margin-top: -10px; */
+}
 
 .photo:hover img{
   box-shadow: 1px 1px 10px 0 rgba(0,0,0,.1);
 }
-.photo .glow{
-  display: block;
-  position:absolute;
-  width: 40%;
-  height: 200%;
-  background: rgba(255,255,255,.2);
-  top: 0;
-  filter: blur(5px);
-  transform: rotate(45deg) translate(-450%, 0);
-  transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
+
 .photo:hover .glow{
   transform: rotate(45deg) translate(450%, 0);
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-
 .photo:hover img,
 .photo:hover .glow-wrap{
   margin-top: 0;
-}
-.photo .glow-wrap{
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  margin-top: -10px;
 }
 
 .abt-button{
@@ -408,7 +400,14 @@ body {
 .work-main-heading{
     text-align: center;
     font-family: var(--secondary-font-family);
+    color: var(--secondary-color);
+    position: relative;
+    bottom: -30px;
+    right: -20px;
  
+}
+hr{
+    color: var(--secondary-color);
 }
 .work-container{
     display: inline-block;
@@ -423,15 +422,65 @@ p{
     font-size: 28px;
     margin-top: 5px!important;
 }
+.contact-container{
+    margin-top: 270px;
+}
+
+.contact-h1{
+    text-align: center;
+    font-family: var(--secondary-font-family);
+    color: var(--secondary-color);
+}
+.contact-details{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.email-icon{
+    width: 46px!important;
+    height: auto;
+    text-align: center!important;
+    transition: trasform .2s;
+}
+.email-icon:hover{
+    margin-top: 30px;
+    transform: scale(2.5);
+}
+.linkedin-icon{
+    width: 46px!important;
+    height: auto;
+    text-align: center!important;
+    transition: trasform .8s;
+}
+.linkedin-icon:hover{
+    margin-top: 30px;
+    transform: scale(2.5);
+
+}
+    
+}
+@media (min-width:576px){
+    .with-mq{
+        display: none;
+
+    }
+
+}
 @media ( max-width:576px){
+
+    h1{
+        font-size: 48px !important;
+        line-height: 1;
+    }
+    
     body{
         max-width: auto;
         max-height: auto;
+        overflow: scroll;
        }
    
     .nav-bar-position{
-        margin-left: 450px!important;
-        margin-top: -100px;
+        margin-top:20px!important;
         text-align: center!important;
 
     }
@@ -439,9 +488,9 @@ p{
         margin: 0 auto;
         margin-left: auto;
         float: right;
-        padding: 10px;
-        margin: 20px;
-
+        position: relative!important;
+        top: 5px!important;    
+        right: -80px;
     }   
       
     .my-self{
@@ -460,8 +509,78 @@ p{
         margin-right: -250px;
         margin-top: 60px;
     }
+    .abt-intro{
+        font-size: 42px!important;
+        text-align: left;
+    }
+    .abt-text{
+        margin-left: -130px;
+        font-size: 48px;
+        padding: 20px 20px;
+    }
+    .photo{
+        display: none;
+    }
+    .work-container{
+        display: block;
+    }
+    
+    .work-main-heading{
+        font-size: 24px!important;
+        top: 100px;
+        right: 0px;
+    }
+    .work-weather{
+        height: auto;
+        width: 300px;
+    }
+    .work-avocado{
+         height: auto;
+        width: 300px;
+    }
+    .work-hobby{
+         height: auto;
+        width: 300px;
+    }
+    .weather-paragraph{
+        margin-left: 50px;
+        margin-top: -90px;
+    }
+    .weather-button{
+        margin-top: -10px!important;
+    }
+    .without-mq{
+        display: none;
+    }
+    .hobby-video{
+        margin-top: -150px;
+    }
+    .hobby-paragraph{
+        position: relative!important;
+        top: 0!important;
+        right: 0;
+    }
+    .work-weather{
+        position: relative;
+        top: 100px;
+    }
+    .weather-paragraph{
+        position: relative;
+        top: 200px;
+        
+    }
+    .avocado-paragraph{
+        position: relative;
+        top: 150px;
+          margin-left: -45px!important;
+    }
+    .avocado-video{
+        margin-top: 150px;
+    }
+    .link-padding{
+        margin-left: 0!important;
+
+    }
+    .contact-container{
+        margin-top: 20px;    }
 }
-
-   
-
-

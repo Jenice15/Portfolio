@@ -7,7 +7,7 @@
             content="Jenice Martin is a front-end developer based in California USA, check out her projects and contact her for job opportunities"
         />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
         <title>Jenice Martin</title>
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -34,78 +34,60 @@
         />
     </head>
     <body>
-        <div class="container">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div id="wrapper">
-                    <img
-                        src="
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+          <div class="container">
+             <div id="wrapper">
+                <img
+                    src="
                     https://s3.amazonaws.com/shecodesio-production/uploads/files/000/090/461/original/My_profile_for_portfolio.jpg?1689694911"
-                        alt="profile-picture"
-                        title="Jenice Martin"
-                        class="profile-picture img-fluid center-block"
-                    />
-                   
-                    <h3 class="my-name">Jenice</h3>
-                </div>
-                <div class="container-fluid nav-bar-position">
-                    <a class="navbar-brand" href="#"></a>
-                    <button
-                        class="navbar-toggler toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav"
-                        aria-controls="navbarNav"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div
-                        class="collapse navbar-collapse navbar-position"
-                        id="navbarNav"
-                    >
-                        <ul class="navbar-nav toggler menu">
-                            <li class="nav-item">
-                                <a
-                                    class="nav-link active"
-                                    aria-current="page"
-                                    href="/"
-                                    >Home
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a
-                                    class="nav-link link-padding"
-                                    href="/about.html"
-                                    >About</a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link link-padding" href="#"
-                                    >My Work</a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link link-padding"
-                                    >Get in touch</a
-                                >
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
+                    alt="profile-picture"
+                    title="Jenice Martin"
+                    class="profile-picture img-fluid center-block"
+                />
+                <h3 class="my-name">Jenice</h3>
+            </div>
+          <button 
+              class="navbar-toggler "
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" 
+              aria-expanded="false" 
+              aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse navbar-position " id="navbarNav">
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-padding" href="/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-padding" href="/myWork.html">My Work(current)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-padding" href="/contact.html">Get in touch</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
         <div class="work-container mt-5">
             <h1 class="work-main-heading mb-5">
                 Take a look at some of my projects
             </h1>
+            <hr>
             <div class="container projects mt-5">
-                <div class="row">
+                <div class="row without-mq">
                     <div class="col-md-6">
                         <video
                             width="400"
                             controls
                             autoplay
+                            loop
                             muted
                             class="work-weather"
                         >
@@ -124,8 +106,8 @@
                             for the coming five days and many more features.
                         </p>
 
-                        <div class="mt-5">
-                            <a href="#" class="btn" title="Weather app"
+                        <div class=" weather-button mt-5">
+                            <a href="https://mellow-macaron-452f5b.netlify.app/" target="_blank" class="btn" title="Weather app"
                                 >Launch app</a
                             >
                         </div>
@@ -141,7 +123,7 @@
                             E, and folate.
                         </p>
                         <div class="mb-5">
-                            <a href="#" class="btn" title="Avocado App"
+                            <a href="https://fanciful-valkyrie-f8dcc6.netlify.app/" target="_blankS" class="btn" title="Avocado App"
                                 >Launch app</a
                             >
                         </div>
@@ -151,6 +133,7 @@
                             width="400"
                             controls
                             autoplay
+                            loop
                             muted
                             class="work-avocado"
                         >
@@ -168,6 +151,7 @@
                         width="400"
                         controls
                         autoplay
+                        loop
                         muted
                         class="work-hobby"
                     >
@@ -183,13 +167,78 @@
                         recipes for treating some health conditions.
                     </p>
                     <div class="mt-5">
-                        <a href="#" class="btn" title="Indian recipe app"
+                        <a href="https://main--delicate-madeleine-071c8f.netlify.app/" target="_blank" class="btn" title="Indian recipe app"
                             >Launch app</a
                         >
                     </div>
                 </div>
             </div>
         </div>
-        <div></div>
+        </div>
+        <div class="row with-mq">
+                    <div class="col-md-6">
+                        <video
+                            width="400"
+                            controls
+                            autoplay
+                            loop
+                            muted
+                            class="work-weather"
+                        >
+                            <source
+                                src="recordings/weatherapp.mp4"
+                                type="video/mp4"
+                            />
+                        </video>
+                    </div>
+                    <div class="col-md-6 weather-paragraph">
+                        <h2 class="mb-3 wedther-heading project-heading">Weather Project</h2>
+                        <p>
+                            This is the weather app that I have coded using
+                            HTML, CSS and JavaScript. It shows live weather from
+                            more than 10,000 cities It shows weather forecast
+                            for the coming five days and many more features.
+                        </p>
+
+                        <div class=" weather-button mt-5">
+                            <a href="https://mellow-macaron-452f5b.netlify.app/" target="_blank" class="btn" title="Weather app"
+                                >Launch app</a
+                            >
+                        </div>
+                    </div>
+                    <div class="col-md-6 avocado-video">
+                        <video
+                            width="400"
+                            controls
+                            autoplay
+                            loop
+                            muted
+                            class="work-avocado"
+                        >
+                            <source
+                                src="recordings/avocado.mp4"
+                                type="video/mp4"
+                            />
+                        </video>
+                    </div>
+                    <div class="col-md-6 avocado-paragraph">
+                        <h2 class="mb-3 project-heading">Avocado Project</h2>
+                        <p>
+                            Avocados are exceptionally nutritious fruits and are
+                            a concentrated source of healthy fats and fiber,
+                            plus a number of vitamins and minerals. They’re rich
+                            in nutrients that are often lacking in many people’s
+                            diets, including magnesium, B6, vitamin C, vitamin
+                            E, and folate.
+                        </p>
+                        <div class="mb-5">
+                            <a href="https://fanciful-valkyrie-f8dcc6.netlify.app/" target="_blankS" class="btn" title="Avocado App"
+                                >Launch app</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </div>
     </body>
 </html>
