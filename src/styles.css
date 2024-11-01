@@ -457,11 +457,17 @@ p{
     transform: scale(2.5);
 
 }
-@media(min-width:577px){
+
+@media(min-width: 400px){
+	.without-mq{
+		display:none;
+	}
+}
+/* @media(min-width:577px){
     .with-mq{
         display: none;
     }
-}
+} */
 @media ( max-width:576px){
     .without-mq{
         display: none;
