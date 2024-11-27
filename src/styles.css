@@ -462,6 +462,12 @@ p{
     transform: scale(1.2);
 
 }
+
+/* @media(min-width: 400px){
+	.without-mq{
+		display:none;
+	}
+} */
 @media(min-width:577px){
     .with-mq{
         display: none;
