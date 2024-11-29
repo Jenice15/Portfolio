@@ -359,6 +359,11 @@ body {
     margin-top: 60PX;
 }
 
+.video-border{
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
 .work-weather{
     border-radius: 10px;
     height: auto;
@@ -367,8 +372,52 @@ body {
 }
 .weather-paragraph{
     position: relative;
-    top: 120px;
+    /* top: 20px; */
     right: 50px;
+    margin-bottom: 80px;
+}
+.dictionary-paragraph{
+     margin-top: 80px
+    /* right: 50px; */
+}
+
+.work-dictionary{
+    margin-top: 80px;
+}
+
+.chatter-paragraph{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.bible-verse-paragraph{
+    margin-top: 50px;
+}
+.work-bible-verse{
+    margin-top: 90px;
+
+}
+.todos-paragraph{
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+.picone-paragraph{
+    margin-top:50px ;
+    font-size: 28px;
+}
+
+.picone-button{
+    margin-top: 20px;
+}
+.picone-video{
+    margin-top: 50px;
+}
+
+.world-clock-paragraph{
+    margin-top: 50px;
+}
+.world-clock-button{
+
+    margin-bottom: 40px;
 }
 .work-avocado{
     border-radius: 10px;
@@ -386,20 +435,20 @@ body {
 }
 
 .hobby-video{
-    position: relative;
-    top: 130px;
+    margin-top: 50px;
     
 }
-.work-hobby
-{
+.work-hobby{
     border-radius: 10px;
     height: auto;
     width: 500px;
 }
 .hobby-paragraph{
-    position: relative;
-    top: 120px;
-    right: 50px;
+ 
+    margin-top: 30px;
+}
+.hobby-button{
+    margin-top: -60px;
 }
 
 .work-main-heading{
@@ -448,8 +497,8 @@ p{
     transition: trasform .2s;
 }
 .email-icon:hover{
-    margin-top: 30px;
-    transform: scale(2.5);
+    /* margin-top: 30px; */
+    transform: scale(1.3);
 }
 .linkedin-icon{
     width: 46px!important;
