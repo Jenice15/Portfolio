@@ -1,6 +1,6 @@
 :root {
     --primary-color: #f2e8e8;
-    --secondary-color: #f094d3;
+    --secondary-color: #a90776;
     --primary-font-family: font-family: 'Gentium Plus', serif;
     --secondary-font-family: 'Playfair Display', serif;
 }
@@ -353,6 +353,9 @@ body {
     font-size: 38px;
     color: var(--secondary-color);
 }
+.button{
+    color: #fff;
+}
 .work-main-heading{
     font-family:  'Roboto Mono', monospace;
     color: #fff;
@@ -407,6 +410,7 @@ body {
 
 .picone-button{
     margin-top: 20px;
+    color: #fff;
 }
 .picone-video{
     margin-top: 50px;
@@ -416,7 +420,7 @@ body {
     margin-top: 50px;
 }
 .world-clock-button{
-
+    color: #fff;
     margin-bottom: 40px;
 }
 .work-avocado{
