@@ -201,7 +201,7 @@ body {
 .linkedin-icon{
     border: 1px solid var(--secondary-color);
     padding: 10px;
-    background-color: var(--secondary-color);
+    background-color:#0A66C2 ;
     border-radius: 10px;
 }
 .nav-link{
