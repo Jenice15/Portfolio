@@ -466,17 +466,18 @@ p {
     margin-top: 5px !important;
 }
 .contact-container {
-    margin-top: 200px;
+    margin-top: 200px !important;
 }
 
 .contact-h1 {
     text-align: center;
     font-family: var(--secondary-font-family);
     color: var(--secondary-color);
+    margin-top: 120px;
 }
 .contact-details {
     text-align: center;
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
 
 .email-icon {
@@ -499,6 +500,9 @@ p {
     /* margin-top: 10px; */
     transform: scale(1.2);
 }
+.navbar-collapse {
+    background-color: white;
+}
 
 /* @media(min-width: 400px){
 	.without-mq{
@@ -512,8 +516,12 @@ p {
 }
 @media (max-width: 576px) {
     .without-mq {
-        display: none;
         margin-top: -100px !important;
+    }
+
+    .navbar {
+        background-color: white !important;
+        height: 110px;
     }
 
     h1 {
@@ -609,12 +617,15 @@ p {
         margin-top: -90px;
     }
     .weather-button {
-        margin-top: -10px !important;
+        margin-top: -20px !important;
+        margin-bottom: 30px;
     }
-    .without-mq {
-        display: none;
+    .react {
+        margin-top: 100px;
     }
-
+    .dictionary-paragraph {
+        margin-top: 10px;
+    }
     .work-weather {
         position: relative;
         top: 100px;
@@ -623,22 +634,36 @@ p {
         position: relative;
         top: 200px;
     }
+
+    .dictionary-hr {
+        margin-bottom: 60px;
+    }
     .chatter-paragraph {
         position: relative;
-        top: 200px;
     }
     .chatter-button {
         margin-top: -10px !important;
     }
+    .chatter-hr {
+        margin-top: -40px;
+    }
     .work-chatter-react {
         height: auto;
         width: 300px;
-        margin-top: -100px;
+        /* margin-top: -100px; */
+    }
+    .bible-verse-paragraph {
+        margin-top: -10px;
     }
     .bible-ai-paragraph {
         position: relative;
-        top: 100px;
         margin-left: -45px !important;
+    }
+    .bible-hr {
+        margin-top: -20px;
+    }
+    .todo-list {
+        margin-top: -40px !important;
     }
     .avocado-paragraph {
         position: relative;
@@ -659,7 +684,22 @@ p {
     .contact-container {
         margin-top: 20px;
     }
+    .picone-button {
+        margin-bottom: -60px;
+    }
+    .picone-hr {
+        margin-bottom: 60px;
+    }
     .hobby-video {
         display: none;
+    }
+    video {
+        display: none;
+    }
+    .project-paragraph {
+        font-size: 18px;
+    }
+    .hobby-button {
+        margin-top: -90px;
     }
 }
